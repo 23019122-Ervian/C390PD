@@ -19,16 +19,45 @@
         </div>
     </div>
 
-    <div class="contact-form">
-    <form action="contact.html" method="POST">
-        <div class="form">
-          <label for="email" class="form-label"></label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-          <label for ="message" class="form-label"></label>
-          <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact <span style="color: #007bff;">Me</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="contact-item">
+                <img src="https://img.icons8.com/material-outlined/24/000000/email-sign.png"/>
+                <span>ervianharith2506@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <img src="https://img.icons8.com/material-outlined/24/000000/phone.png"/>
+                <span>+65 87694629</span>
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+
+    <div class="contact-form">
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Input your name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Input your email" required>
+            
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Input your phone number">
+            
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+                <option value="">Select</option>
+                <option value="inquiry">Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="support">Support</option>
+            </select>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Please write your message..." rows="4" required></textarea>
+            
+            <button type="submit">Send message</button>
+        </form>
     </div>
+</div>
 </body>
 </html>
